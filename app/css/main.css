@@ -1,0 +1,50 @@
+body {
+  overflow-x: hidden;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.thumbnail-img {
+  width: 100px;
+  float: right;
+  margin: 10px;
+}
+
+.info {
+  display: block;
+  margin: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.card {
+  display: block;
+  border: 3px solid;
+  width: 50%;
+  height: 200px;
+  margin: 10px auto;
+}
+
+.loading {
+  margin: 20px auto;
+  border: none;
+  text-align: center;
+}
+
+.heading {
+  display: block;
+  text-align: center;
+  margin: -10px 0 0 0;
+  width: 100%;
+  padding-top: 10px;
+}

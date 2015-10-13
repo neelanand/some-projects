@@ -1,0 +1,12 @@
+<h1 class="heading">Cards</h1>
+<p class='loading' ng-if="loading">Loading...</p>
+<div ng-if="!loading">
+  <li class="card" ng-repeat="card in cards">
+    <img class='thumbnail-img' ng-if="card.type!='movie'" ng-src={{card.imageURL}} alt='Card Image'>
+    <img class='thumbnail-img' ng-if="card.type=='movie'" ng-src={{card.movieExtraImageURL}} alt='Card Image'>
+    <h3 class="info">{{card.title}}</h3>
+    <a class="info" ng-href={{card.musicVideoURL}} ng-if="card.type=='music'">Music Video</a>
+    <p class="info" ng-if="card.placeCategory">Category: {{card.placeCategory}}</p>
+    <div class="clearfix"></div>
+  </li>
+</div>
