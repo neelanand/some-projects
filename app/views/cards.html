@@ -2,10 +2,10 @@
   <h1 class="heading">Cards</h1>
 </div>
 <div class="card" ng-repeat="card in cards">
-  <img class='small-logo' ng-src={{card.imageURL}} alt='Card Image'>
-  <label class="info label">{{card.title}}</label>
+  <img class='thumbnail-img' ng-if="card.type!='movie'" ng-src={{card.imageURL}} alt='Card Image'>
+  <img class='thumbnail-img' ng-if="card.type=='movie'" ng-src={{card.movieExtraImageURL}} alt='Card Image'>
+  <h3 class="info">{{card.title}}</h3>
+  <a class="info" ng-href={{card.musicVideoURL}} ng-if="card.type=='music'">Music Video</a>
+  <p class="info" ng-if="card.placeCategory">Category: {{card.placeCategory}}</p>
   <div class="clearfix"></div>
-    <label class="info label">{{card.title}}</label>
-    <label class="info label">{{card.type}}</label>
-  </div>
 </div>
