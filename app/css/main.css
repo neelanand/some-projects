@@ -12,13 +12,6 @@ body {
   float: left;
 }
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-}
-
 .thumbnail-img {
   width: 100px;
   float: right;
@@ -40,6 +33,12 @@ body {
   width: 50%;
   height: 200px;
   margin: 10px auto;
+}
+
+.loading {
+  margin: 20px auto;
+  border: none;
+  text-align: center;
 }
 
 .heading {
