@@ -1,0 +1,116 @@
+body {
+  color: white;
+  overflow-x: hidden;
+  font-weight: lighter;
+  letter-spacing: 0.09rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.row {
+  padding-bottom: 15px;
+}
+
+.fa {
+  padding: 10px 0 0 10px;
+}
+
+.fa-angle-left {
+  cursor: pointer;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.large-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.small-logo {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.info {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+
+  .label {
+    display: block;
+
+
+    padding: 0;
+
+    text-align: center;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.body-background {
+  background-color: #333333;
+}
+
+.header-background {
+  background-color: #665F4D;
+  display: block;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  display: block;
+  text-align: center;
+  margin: -10px 0 0 0;
+  width: 100%;
+  padding-top: 10px;
+}
+
+table {
+  table-layout: fixed;
+  border: 1px solid white;
+  td {
+    p {
+      padding-bottom: -10px;
+    }
+  }
+}
+
+h1 {
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 26.4px;
+}
+h3 {
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 20px;
+}
+p {
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 20px;
+}
