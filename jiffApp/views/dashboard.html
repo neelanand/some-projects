@@ -1,0 +1,14 @@
+<div class="header-background">
+  <i class="fa fa-tachometer fa-2x left"></i>
+  <h1 class="heading">Dashboard</h1>
+</div>
+<div class="row" ng-repeat="blueprint in blueprints | orderBy: 'display_order'">
+  <div class="col-xs-4">
+    <img class='small-logo' ng-src={{blueprint.icon_url}} alt='Icon Image' ng-click='viewBlueprint(blueprint)'>
+    <div class="clearfix"></div>
+    <label class="info label">{{blueprint.title}}</label>
+  </div>
+  <div class="col-xs-8">
+    <label class="label">{{blueprint.display_type | beautifyText}}</label>
+  </div>
+</div>
