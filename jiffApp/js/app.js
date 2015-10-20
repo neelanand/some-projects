@@ -1,4 +1,4 @@
-var jiffApp = angular.module('jiffApp', ['ngRoute', 'ngResource'])
+var jiffApp = angular.module('jiffApp', ['ngRoute'])
 
 jiffApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
