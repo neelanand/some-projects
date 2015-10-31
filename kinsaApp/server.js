@@ -6,7 +6,6 @@ var mongoose   = require('mongoose');
 mongoose.connect('mongodb://kinsa:kinsa@ds045714.mongolab.com:45714/kinsaapp');
 
 var Chat = require('../kinsaApp/models/chat.js');
-console.log(Chat);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -31,10 +30,19 @@ router.route('/chat')
         chat.save(function(err) {
             if (err)
                 res.send(err);
-            console.log(res);
+            
             res.json({ message: 'Chat created!' });
         });
         
+    })
+
+    .get(function(req, res) {
+        Chat.find(function(err, chat) {
+            if (err)
+                res.send(err);
+
+            res.json(chat);
+        });
     });
 
 app.use('/api', router);
