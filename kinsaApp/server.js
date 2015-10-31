@@ -18,7 +18,7 @@ var port = process.env.PORT || 8000;
 var router = express.Router();
 
 router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });   
+    res.json({ message: 'Welcome to the api!' });   
 });
 
 router.route('/chat')
@@ -27,9 +27,7 @@ router.route('/chat')
         var chat = new Chat();
         chat.username = req.body.username;
         chat.text = req.body.text;
-
-        console.log(chat);
-        // save the bear and check for errors
+        
         chat.save(function(err) {
             if (err)
                 res.send(err);
